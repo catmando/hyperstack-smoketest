@@ -29,6 +29,9 @@ class Hyperstack::App < HyperComponent
 
   def input
     DIV(class: 'ui input fluid block') do
+      # demonstrating how "controlled components" work
+      # defaultValue is only read when the component is first mounted
+      # after that the changes are not noticed (until you remount the component)
       INPUT(type: :text, defaultValue: @input_value).on(:change) do |evt|
         # we are updating the value per keypress
         mutate @input_value = evt.target.value.reverse

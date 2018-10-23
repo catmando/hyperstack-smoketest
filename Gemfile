@@ -36,9 +36,9 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 #https://github.com/hyperstack-org/hyperstack/blob/edge/ruby/hyper-component/hyper-component.gemspec
-gem 'hyper-component',  github: 'hyperstack-org/hyperstack', branch: 'edge', glob: 'ruby/*/*.gemspec'
-gem 'hyper-state',      github: 'hyperstack-org/hyperstack', branch: 'edge', glob: 'ruby/*/*.gemspec'
-gem 'hyperloop-config', github: 'hyperstack-org/hyperstack', branch: 'edge', glob: 'ruby/*/*.gemspec'
+gem 'hyper-component',   github: 'hyperstack-org/hyperstack', branch: 'edge', glob: 'ruby/*/*.gemspec'
+gem 'hyper-state',       github: 'hyperstack-org/hyperstack', branch: 'edge', glob: 'ruby/*/*.gemspec'
+gem 'hyperstack-config', github: 'hyperstack-org/hyperstack', branch: 'edge', glob: 'ruby/*/*.gemspec'
 # gem 'hyper-component',   path: '../hyperstack/ruby/hyper-component'
 # gem 'hyper-state',       path: '../hyperstack/ruby/hyper-state'
 # gem 'hyperstack-config', path: '../hyperstack/ruby/hyperstack-config'

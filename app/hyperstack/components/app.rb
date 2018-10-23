@@ -12,7 +12,6 @@ class Hyperstack::App < HyperComponent
   before_mount { @show = Toggle.new(:show, :hide) }
 
   render(DIV) do
-    puts 'renderingmutat'
     # the button method returns an HTML element
     # .on(:click) is an event handeler
     button.on(:click) { @show.toggle! }
